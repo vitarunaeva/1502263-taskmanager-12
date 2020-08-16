@@ -52,7 +52,6 @@ render(boardComponent.getElement(), new SortView().getElement(), RenderPosition.
 
 const taskListComponent = new TaskListView();
 render(boardComponent.getElement(), taskListComponent.getElement());
-render(taskListComponent.getElement(), new TaskEditView(tasks[0]).getElement());
 
 for (let i = 0; i < Math.min(tasks.length, TASK_COUNT_PER_STEP); i++) {
   renderTask(taskListComponent.getElement(), tasks[i]);
